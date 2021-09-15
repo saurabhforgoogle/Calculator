@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".life">
+
+
+
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/calculator"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:onClick="calcfunc"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"/>
+
+    <Button
+        android:id="@+id/life"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/life"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutlife"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/bmi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:text="@string/body_mass_index"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/whitish"
+                android:backgroundTint="@color/buttons"
+                android:layout_marginEnd="5dp" />
+            <Button
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/discount"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/whitish"
+                android:gravity="center"
+                android:backgroundTint="@color/buttons"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/date"
+                android:textSize="30sp"
+                android:backgroundTint="@color/buttons"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/whitish"
+                android:gravity="center"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/temp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/buttons"
+                android:gravity="center"
+                android:text="@string/temp"
+                android:textColor="@color/whitish"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/interestcalc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/interest"
+                android:textSize="20sp"
+                android:textColor="@color/whitish"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/buttons"
+                android:gravity="center"
+                android:layout_marginEnd="5dp" />
+            <Button
+                android:id="@+id/length"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/length"
+                android:layout_marginLeft="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/whitish"
+                android:backgroundTint="@color/buttons"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="175dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

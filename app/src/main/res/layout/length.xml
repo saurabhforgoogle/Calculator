@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".life">
+
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/backbutton"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"/>
+
+    <Button
+        android:id="@+id/life"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/life"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+
+        />
+
+    <EditText
+        android:id="@+id/editFeetLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@color/displaycolor"
+        android:inputType="numberDecimal"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/life" />
+
+    <EditText
+        android:id="@+id/editMetreLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/displaycolor"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFeetLength"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editMileLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/displaycolor"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMetreLength"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/FeetLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feet"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/buttons"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editFeetLength"
+        />
+
+
+    <TextView
+        android:id="@+id/MetreLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Metre"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/buttons"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editMetreLength"
+        />
+
+
+    <TextView
+        android:id="@+id/MileLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mile"
+        android:textSize="25sp"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editMileLength"
+        />
+
+
+    <TextView
+        android:id="@+id/suggestionLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editMileLength"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="175dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

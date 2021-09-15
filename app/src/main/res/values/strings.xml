@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="calculator">Calculator</string>
+    <string name="life">Life</string>
+    <string name="info">History</string>
+    <string name="equals">=</string>
+    <string name="dot">.</string>
+    <string name="_0">0</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="plus">+</string>
+    <string name="_1">1</string>
+    <string name="_6">6</string>
+    <string name="minus">-</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="x">x</string>
+    <string name="_7">7</string>
+    <string name="divide">/</string>
+    <string name="mod">%</string>
+    <string name="sign">+/-</string>
+    <string name="c">C</string>
+    <string name="leftbracket">(</string>
+    <string name="rightbracket">)</string>
+    <string name="del">del</string>
+    <string name="back">Delete and Go Back (or back using device)</string>
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="discount">Discount</string>
+    <string name="date">Date</string>
+    <string name="temp">Temperature</string>
+    <string name="backbutton">Back</string>
+    <string name="interest">Interest Calculator</string>
+    <string name="length">length</string>
+    <string name="Submitinlife">Calculate</string>
+    <string name="instructionbmi"><![CDATA[Instructions:\n<18 : Underweight\n>18 and <25: Good \n >25:overweight]]></string>
+</resources>

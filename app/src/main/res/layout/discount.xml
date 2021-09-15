@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".life">
+
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/backbutton"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"/>
+
+    <Button
+        android:id="@+id/life"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/life"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+
+        />
+    <EditText
+        android:id="@+id/editpricediscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/displaycolor"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/life"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editdiscountdiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/displaycolor"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpricediscount"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/pricediscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/buttons"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/discountdiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Discount(in %)"
+        android:textSize="25sp"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/pricediscount"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/answerdiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        tools:text="Answer"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/discountdiscount"/>
+
+
+    <Button
+        android:id="@+id/discountsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submitinlife"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/answerdiscount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="175dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
